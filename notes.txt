@@ -1,0 +1,36 @@
+class Employee{
+
+     Address address;
+
+      void setAddress(Address  address){
+         this.address = address;
+     }	   
+}
+
+
+
+class Student{
+
+     Address address;
+
+
+      Student(Address a){
+         address = a;
+      }
+}
+
+class Address{
+     String city,state,country,addressLine;
+     int pincode;
+}
+Address adress = new Address();
+Student s= new Student(address);
+DI->
+    1) constructor
+    2) setter 
+-----------------------------------------------------------
+SignupController 
+   bean
+   dao
+      connection->
+       stmt ->query

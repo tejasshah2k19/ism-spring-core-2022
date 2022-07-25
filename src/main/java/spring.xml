@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-init-method="init">
+
+
+	<bean class="com.controller.SignupController"
+		id="signupController" scope="prototype"></bean>
+
+
+	<bean class="com.bean.UserBean" id="user">
+		<property name="firstName" value="ram"></property>
+		<property name="email" value="ram@gmail.com"></property>
+	</bean>
+
+	<bean class="com.bean.StudentBean" id="student" init-method="init"
+		destroy-method="remove">
+	</bean>
+
+
+	<bean class="com.bean.EmployeeBean" id="emp">
+	</bean>
+
+
+	<bean class="com.bean.AddressBean" id="address"></bean>
+	<bean class="com.bean.DoctorBean" id="doc">
+		<constructor-arg ref="address"></constructor-arg>
+		<property name="firstName" value="anil"></property>
+	</bean>
+
+	<bean class="com.bean.PatientBean" id="patient">
+		<property name="addressBean" ref="address"></property>
+	</bean>
+
+</beans>
