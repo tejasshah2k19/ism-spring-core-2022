@@ -20,7 +20,7 @@
 	</bean>
 
 
-	<bean class="com.bean.EmployeeBean" id="emp">
+	<bean class="com.bean.EmployeeBean" id="emp" scope="singleton">
 	</bean>
 
 

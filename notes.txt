@@ -1,3 +1,29 @@
+ioc container 
+1) BeanFactor 
+2) ApplicationContext 
+
+-> bean factory child ?
+-> applicationcontext child ?
+
+ClassPathXmlApplicationContext 
+**
+**
+
+-------------------------
+
+scope --> 
+
+1) singleton 
+2) prototype 
+3) request 
+4) session
+5) global-session 
+
+
+-----------------------------
+
+
+
 class Employee{
 
      Address address;
