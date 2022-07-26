@@ -16,8 +16,8 @@ scope -->
 1) singleton 
 2) prototype 
 3) request 
-4) session
-5) global-session 
+4) session [ session - user specific ] 
+5) global-session [application - user common ] 
 
 
 -----------------------------
@@ -60,3 +60,75 @@ SignupController
    dao
       connection->
        stmt ->query
+------------------------------------------------------------------
+who manage life cycle of the spring-bean object in spring?
+ioc 
+
+how many object of SignupBean created if i ask 5 times signupBean from ioc container? 
+1
+
+list out all the scope of bean!
+request
+session
+singleton
+prototype
+global-session 
+
+_____ and ______ interfaces are used for IOC?
+BeanFactory
+ApplicationContext 
+
+
+List out child of ApplicationContext!
+ClassPathXmlAppliactionContext
+FileSystemXMlApplicationContext
+WebXmlApplicationContext 
+
+
+_________ interface is used to initialize spring bean ! 
+InitializingBean
+
+
+________ method we have to override in InitializingBean!?
+afterPropertiesSet
+
+
+
+how many injection we have in spring?
+2
+
+List out all injection of spring?
+1) constructor
+2) setter 
+
+
+when to use setter inject? 
+when we have optional DI
+
+-------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       

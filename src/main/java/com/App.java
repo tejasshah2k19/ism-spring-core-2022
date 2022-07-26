@@ -26,7 +26,7 @@ public class App {
 		// ClassPathXmlApplicationContext
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-		System.out.println(context);
+		System.out.println(context);//started 
 
 		SignupController s1 = context.getBean("signupController", SignupController.class);
 		SignupController s2 = context.getBean("signupController", SignupController.class);
